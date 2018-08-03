@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         TrelloLess
+// @name         TrelloLess by zhuhang
 // @namespace    https://greasyfork.org/en/users/200777
-// @version      0.1
+// @version      1.0
 // @description  Remove unwanted Trello cosmetic stuffs
 // @author       zhuhang.jasper
 // @match        https://trello.com/b/*/*
