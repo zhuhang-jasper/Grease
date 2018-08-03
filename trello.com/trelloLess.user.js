@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         Trello Customized
-// @namespace    http://tampermonkey.net/
+// @name         TrelloLess
+// @namespace    https://greasyfork.org/en/users/200777
 // @version      0.1
-// @description  Simplify UI, remove unwanted stuff.
+// @description  Remove unwanted Trello cosmetic stuffs
 // @author       zhuhang.jasper
-// @match        https://trello.com/b/oZIQNihe/dev-plus
+// @match        https://trello.com/b/*/*
 // @grant        none
 // ==/UserScript==
 
@@ -20,11 +20,13 @@ function addJQuery(callback) {
   document.body.appendChild(script);
 }
 
+// Main Logic
 function main() {
     // Hide Trello colon symbol from custom field badge
     $('span .badge-text').each(function(){$(this).html($(this).html().replace(":",""))});
 }
 
+// Script jQuery Wrapper
 (function() {
     'use strict';
     addJQuery(main);
