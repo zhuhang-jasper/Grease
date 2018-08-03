@@ -5,7 +5,9 @@
 // @description  Remove unwanted Trello cosmetic stuffs
 // @author       zhuhang.jasper
 // @match        https://*.trello.com/b/*
+// @match        https://trello.com/1/boards/*
 // @match        https://trello.com/b/*
+// @match        https://*.trello.com/1/boards/*
 // @include      /^https:\/\/.*\.trello\.com\/b\/.*$/
 // @grant        none
 // ==/UserScript==
