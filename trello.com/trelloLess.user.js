@@ -4,10 +4,9 @@
 // @version      1.1
 // @description  Remove unwanted Trello cosmetic stuffs
 // @author       zhuhang.jasper
-// @match        http://*.trello.com/b/*/*
-// @match        https://*.trello.com/b/*/*
-// @match        http://trello.com/b/*/*
-// @match        https://trello.com/b/*/*
+// @match        https://*.trello.com/b/*
+// @match        https://trello.com/b/*
+// @include      /^https:\/\/.*\.trello\.com\/b\/.*$/
 // @grant        none
 // ==/UserScript==
 
