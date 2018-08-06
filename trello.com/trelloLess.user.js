@@ -2,7 +2,7 @@
 // @name         TrelloLess by zhuhang
 // @namespace    https://greasyfork.org/en/users/200777
 // @version      1.2
-// @description  Remove unwanted Trello cosmetic stuffs
+// @description  Remove unwanted Trello cosmetic stuffs. 1. Remove colon(:) character from badges in front-of-card (especially 'Custom Fields' Power-Up)
 // @author       zhuhang.jasper
 // @match        https://trello.com/b/*
 // @match        https://trello.com/c/*
