@@ -17,8 +17,8 @@ $.fn.hideColonInBadge = function() {
     $('span .badge-text').each(function(){
         var newContent = $(this).html();
         newContent = newContent.replace(":","");
+        newContent = newContent.replace("&lt;NONE&gt;","");
         newContent = newContent.replace("<NONE>","");
-        newContent = newContent.replace("<none>","");
         $(this).html(newContent);
     });
 }
