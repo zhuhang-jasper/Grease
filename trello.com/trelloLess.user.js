@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TrelloLess by zhuhang
 // @namespace    https://greasyfork.org/en/users/200777
-// @version      1.2
+// @version      1.3
 // @description  Remove unwanted Trello cosmetic stuffs. 1. Remove colon(:) character from badges in front-of-card (especially 'Custom Fields' Power-Up)
 // @author       zhuhang.jasper
 // @match        https://trello.com/b/*
@@ -14,7 +14,13 @@
 
 // FN001 : Hide colon symbol from custom field badges in cards
 $.fn.hideColonInBadge = function() {
-    $('span .badge-text').each(function(){$(this).html($(this).html().replace(":",""))});
+    $('span .badge-text').each(function(){
+        var newContent = $(this).html();
+        newContent = newContent.replace(":","");
+        newContent = newContent.replace("<NONE>","");
+        newContent = newContent.replace("<none>","");
+        $(this).html(newContent);
+    });
 }
 
 /*** Event Appenders ***/
